@@ -61,6 +61,7 @@
 							</li>
 							<li><a href="index-1.html">About</a></li>
 							<li><a href="index-4.html">Contacts</a></li>
+							<li><a href="Login.html">Login</a>
 						</ul>
 					</nav>
 				</div>
@@ -72,18 +73,22 @@
 <!--=======content================================-->
 
 <section id="content">
-	<div class="containernew">
-        <h2>Login</h2>
-		<form id="signupForm">
-            <input type="Phone" id="Phone" placeholder="Phone No" maxlength="10" oninput="validateNumberInput(this)" pattern="[0-9]*" required>
+    <div class="containernew">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="tel" id="Phone" placeholder="Phone No" maxlength="10" oninput="validateNumberInput(this)" pattern="[0-9]*" required>
             <button type="button" id="sendOtpBtn">Continue</button>
+			
             <div id="otpSection" style="display: none;">
-                <input type="text" id="otp" placeholder="Password"  pattern="[0-9]*" required>
-                <button onclick="redirectToPage()" type="button" id="verifyOtpBtn">Continue</button>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <span id="error-message" class="error-message">Password must be at least 6 characters long, contain at least one uppercase letter, and one special character.</span>
+                <span id="valid-message" class="valid-message">Password meets the criteria!</span>
+                <button type="button" id="verifyOtpBtn">Sign Up</button>
             </div>
         </form>
-	</div>
-    <script src="../build-up/js/Login.js"></script>
+    </div>
+    <script src="../js/SignUp.js"></script>
 </section>
 
 <!--=======footer=================================-->

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/camera.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/SignUp.css">
+    <link rel="stylesheet" href="css/Login.css">
 
     
 
@@ -53,7 +53,7 @@
 					<h1><a href="index.html">S&S Career Consultancy</a><span><br>your loan agency</span></h1>
 					<nav>
 						<ul class="sf-menu">
-							<li class="current"><a href="index.html">Home</a>
+							<li><a href="index.html">Home</a>
 								<ul>
 									<li><a href="Login.html">Login</a></li>
 									</li>
@@ -61,6 +61,7 @@
 							</li>
 							<li><a href="index-1.html">About</a></li>
 							<li><a href="index-4.html">Contacts</a></li>
+							<li><a href="SignUp.html">SignUp</a>
 						</ul>
 					</nav>
 				</div>
@@ -72,19 +73,23 @@
 <!--=======content================================-->
 
 <section id="content">
-	<div class="containernew">
+    <div class="containernew">
         <h2>Login</h2>
-		<form id="signupForm">
-            <input type="Phone" id="Phone" placeholder="Phone No" maxlength="10" oninput="validateNumberInput(this)" pattern="[0-9]*" required>
+        <form id="loginForm">
+            <input type="tel" id="Phone" placeholder="Phone No" maxlength="10" oninput="validateNumberInput(this)" pattern="[0-9]*" required>
             <button type="button" id="sendOtpBtn">Continue</button>
+			<div id="SignUpSection" style="display: none;">
+				<button type="button" id="SignUpbutton">Sign Up</button>
+				<span id="valid-message" class="valid-message">Please Sign Up</span>
+			</div>
             <div id="otpSection" style="display: none;">
-                <input type="password" id="password" placeholder="Password"  pattern="[0-9]*" required>
-				<span id="error-message" class="error-message">Password must be at least 6 characters long, contain at least one uppercase letter, and one special character.</span>
-        		<span id="valid-message" class="valid-message">Password meets the criteria!</span>
-				<button  type="button" id="verifyOtpBtn">Continue</button>
+                <input type="password" id="password" placeholder="Password" required>
+                <span id="error-message" class="error-message">Password must be at least 6 characters long, contain at least one uppercase letter, and one special character.</span>
+                <span id="valid-message" class="valid-message">Password meets the criteria!</span>
+                <button type="button" id="verifyOtpBtn">Login</button>
             </div>
         </form>
-	</div>
+    </div>
     <script src="../js/Login.js"></script>
 </section>
 

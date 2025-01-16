@@ -46,6 +46,8 @@
 					<h1><a href="index.html">S&S Career Counsultancy</a><span><br>Make YourSelf Independent.</span></h1>
 					<nav>
 						<ul class="sf-menu">
+							<li><a href="Pricing.html">Pricing</a></li>
+							<li><a href="Report.html">Reports</a></li>
 							<li><a href="index.html">Log Out</a></li>
 						</ul>
 					</nav>
@@ -65,124 +67,108 @@
 				<div class="grid_5">
 					<form id="contact-form">
 						<div class="contact-form-loader"></div>
-							<header>
-								<h3><span>Kindly Fill up the Form</span></h3>
-                                <h2><span> </span></h2>
-							</header>
-							<fieldset>
-									<label class="name">
-										<span class="text">Your Name:</span>
-										<input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters" />
-											<span class="empty-message">*This field is required.</span>
-											<span class="error-message">*This is not a valid name.</span>
-									</label>
-									<label class="email">
-										<span class="text">Your E-mail:</span>
-										<input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*This is not a valid email.</span>
-									</label>
-                                    <label class="Phone">
-										<span class="text">Your Phone No:</span>
-										<input type="text" name="Phone" placeholder="" value="" data-constraints="@Required @Phone" />
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*This is not a valid Phone.</span>
-									</label>
-									<label class="qualificationLevel">
-										<span class="text">Your Qualification:</span>
-										<input type="text" id="phoneInput1" class="dropdown-input" name="Qualification" placeholder="Select Qualification Level" value="" data-constraints="@Required @myDropdown" onchange="updateQualifications()"/>
-										<div class="dropdown-content">
-											<!-- <a href="#" onclick="selectOption('Select Qualification Level', 'phoneInput1')">Select Qualification Level</a> -->
-											<a href="#" onclick="selectOption('School Level Qualifications', 'phoneInput1')">School Level Qualifications</a>
-											<a href="#" onclick="selectOption('Undergraduate Degrees', 'phoneInput1')">Undergraduate Degrees</a>
-											<a href="#" onclick="selectOption('Postgraduate Degrees', 'phoneInput1')">Postgraduate Degrees</a>
-											<a href="#" onclick="selectOption('Doctorate Degrees', 'phoneInput1')">Doctorate Degrees</a>
-											<a href="#" onclick="selectOption('Diplomas and Certificates', 'phoneInput1')">Diplomas and Certificates</a>
-										</div>
-										<span class="empty-message">*This field is required.</span>
-									</label>
-									<label class="Qualification">
-										<span class="text">Your Qualification (Degree):</span>
-										<input type="text" id="phoneInput2" class="dropdown-input" name="Qualification" placeholder="" value="" data-constraints="@Required @myDropdown"/>
-										<div class="dropdown-content" id="degreeDropdown">
-											<!-- Options will be dynamically added here -->
-										</div>
-										<span class="empty-message">*This field is required.</span>
-									</label>
-                                    <label class="dropdown">
-                                        <span class="text">Applying For:</span>
-                                        <input type="text" name="phone" class="dropdown-input" id="phoneInput3" placeholder=""  value=""  data-constraints="@Required @myDropdown">
-                                        <div class="dropdown-content">
-                                            <a href="#" onclick="selectOption('Software Developer' , 'phoneInput3')">Software Developer</a>
-                                            <a href="#" onclick="selectOption('Web Developer' , 'phoneInput3')">Web Developer</a>
-                                            <a href="#" onclick="selectOption('Network Engineer' , 'phoneInput3')">Network Engineer</a>
-                                            <a href="#" onclick="selectOption('Cybersecurity Specialist' , 'phoneInput3')">Cybersecurity Specialist</a>
-                                            <a href="#" onclick="selectOption('Data Scientist' , 'phoneInput3')">Data Scientist</a>
-                                            <a href="#" onclick="selectOption('Database Administrator' , 'phoneInput3')">Database Administrator</a>
-                                            <a href="#" onclick="selectOption('IT Support Specialist' , 'phoneInput3')">IT Support Specialist</a>
-                                            <a href="#" onclick="selectOption('Cloud Engineer' , 'phoneInput3')">Cloud Engineer</a>
-                                            <a href="#" onclick="selectOption('Systems Analyst' , 'phoneInput3')">Systems Analyst</a>
-                                            <a href="#" onclick="selectOption('IT Project Manager' , 'phoneInput3')">IT Project Manager</a>
-                                            <a href="#" onclick="selectOption('DevOps Engineer' , 'phoneInput3')">DevOps Engineer</a>
-                                            <a href="#" onclick="selectOption('Quality Assurance Tester' , 'phoneInput3')">Quality Assurance Tester</a>
-                                            <a href="#" onclick="selectOption('UX/UI Designer' , 'phoneInput3')">UX/UI Designer</a>
-                                            <a href="#" onclick="selectOption('IT Consultant' , 'phoneInput3')">IT Consultant</a>
-                                            <a href="#" onclick="selectOption('Mobile App Developer' , 'phoneInput3')">Mobile App Developer</a>
-                                            <a href="#" onclick="selectOption('Artificial Intelligence/Machine Learning Engineer' , 'phoneInput3')">Artificial Intelligence/Machine Learning Engineer</a>
-                                            <a href="#" onclick="selectOption('IT Director' , 'phoneInput3')">IT Director</a>
-                                            <a href="#" onclick="selectOption('Help Desk Technician' , 'phoneInput3')">Help Desk Technician</a>
-                                            <a href="#" onclick="selectOption('Information Systems Manager' , 'phoneInput3')">Information Systems Manager</a>
-                                            <a href="#" onclick="selectOption('Product Manager' , 'phoneInput3')">Product Manager</a>
-                                        </div>
-                                        <span class="empty-message">*This field is required.</span>
-                                    </label>
-									<label class="experience">
-										<span class="text">Your Qualification:</span>
-										<input type="text" id="phoneInput4" class="dropdown-input" name="experience" placeholder="Select experience Level" value="" data-constraints="@Required @myDropdown" />
-										<div class="dropdown-content">
-											<!-- <a href="#" onclick="selectOption('Select Qualification Level', 'phoneInput1')">Select Qualification Level</a> -->
-											<a href="#" onclick="selectOption('Fresher', 'phoneInput4')">Fresher</a>
-											<a href="#" onclick="selectOption('1 year', 'phoneInput4')">1 year</a>
-											<a href="#" onclick="selectOption('1yr to 3yr', 'phoneInput4')">1yr to 3yr</a>
-											<a href="#" onclick="selectOption('3yr to 5yr', 'phoneInput4')">3yr to 5yr</a>
-											<a href="#" onclick="selectOption('5yr to 10yr', 'phoneInput4')">5yr to 10yr</a>
-											<a href="#" onclick="selectOption('More than 10yr', 'phoneInput4')">More than 10yr</a>
-										</div>
-										<span class="empty-message">*This field is required.</span>
-									</label>
-									<label class="message">
-										<span class="text">Message:</span>
-										<input type="text" name="message" placeholder="" data-constraints='@Required @Length(min=20,max=99999)'></input>
-										<span class="empty-message">*This field is required.</span>
-										<span class="error-message">*The message is too short.</span>
-									</label>
-								<div class="cont_btn">
-									<a href="#" data-type="reset" class="btn">Clear</a>
-									<a href="Pricing.html" data-type="submit" class="btn">Next</a>
+						<header>
+							<h3><span>Kindly Fill up the Form</span></h3>
+							<h2><span> </span></h2>
+						</header>
+						<fieldset>
+							<label class="name">
+								<span class="text">Your Name:</span>
+								<input type="text" name="name" placeholder="" value="" data-constraints="@Required @JustLetters" />
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*This is not a valid name.</span>
+							</label>
+							<label class="email">
+								<span class="text">Your E-mail:</span>
+								<input type="text" name="email" placeholder="" value="" data-constraints="@Required @Email" />
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*This is not a valid email.</span>
+							</label>
+							<label class="Phone">
+								<span class="text">Your Phone No:</span>
+								<input type="text" name="Phone" placeholder="" value="" data-constraints="@Required @Phone" />
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*This is not a valid Phone.</span>
+							</label>
+							<label class="qualificationLevel">
+								<span class="text">Your Qualification:</span>
+								<input type="text" id="phoneInput1" class="dropdown-input" name="Qualification" placeholder="Select Qualification Level" value="" data-constraints="@Required @myDropdown" onchange="updateQualifications()" />
+								<div class="dropdown-content">
+									<a href="#" onclick="selectOption('School Level Qualifications', 'phoneInput1')">School Level Qualifications</a>
+									<a href="#" onclick="selectOption('Undergraduate Degrees', 'phoneInput1')">Undergraduate Degrees</a>
+									<a href="#" onclick="selectOption('Postgraduate Degrees', 'phoneInput1')">Postgraduate Degrees</a>
+									<a href="#" onclick="selectOption('Doctorate Degrees', 'phoneInput1')">Doctorate Degrees</a>
+									<a href="#" onclick="selectOption('Diplomas and Certificates', 'phoneInput1')">Diplomas and Certificates</a>
 								</div>
-						</fieldset> 
-						<div class="modal fade response-message">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-										<h4 class="modal-title">Modal title</h4>
-									</div>
-									<div class="modal-body">
-										You message has been sent! We will be in touch soon.
-									</div>
+								<span class="empty-message">*This field is required.</span>
+							</label>
+							<label class="Qualification">
+								<span class="text">Your Qualification (Degree):</span>
+								<input type="text" id="phoneInput2" class="dropdown-input" name="Qualification" placeholder="" value="" data-constraints="@Required @myDropdown" />
+								<div class="dropdown-content" id="degreeDropdown">
+									<!-- Options will be dynamically added here -->
 								</div>
+								<span class="empty-message">*This field is required.</span>
+							</label>
+							<label class="dropdown">
+								<span class="text">Applying For:</span>
+								<input type="text" name="phone" class="dropdown-input" id="phoneInput3" placeholder="" value="" data-constraints="@Required @myDropdown">
+								<div class="dropdown-content">
+									<a href="#" onclick="selectOption('Software Developer', 'phoneInput3')">Software Developer</a>
+									<a href="#" onclick="selectOption('Web Developer', 'phoneInput3')">Web Developer</a>
+									<a href="#" onclick="selectOption('Network Engineer', 'phoneInput3')">Network Engineer</a>
+									<a href="#" onclick="selectOption('Cybersecurity Specialist', 'phoneInput3')">Cybersecurity Specialist</a>
+									<a href="#" onclick="selectOption('Data Scientist', 'phoneInput3')">Data Scientist</a>
+									<a href="#" onclick="selectOption('Database Administrator', 'phoneInput3')">Database Administrator</a>
+									<a href="#" onclick="selectOption('IT Support Specialist', 'phoneInput3')">IT Support Specialist</a>
+									<a href="#" onclick="selectOption('Cloud Engineer', 'phoneInput3')">Cloud Engineer</a>
+									<a href="#" onclick="selectOption('Systems Analyst', 'phoneInput3')">Systems Analyst</a>
+									<a href="#" onclick="selectOption('IT Project Manager', 'phoneInput3')">IT Project Manager</a>
+									<a href="#" onclick="selectOption('DevOps Engineer', 'phoneInput3')">DevOps Engineer</a>
+									<a href="#" onclick="selectOption('Quality Assurance Tester', 'phoneInput3')">Quality Assurance Tester</a>
+									<a href="#" onclick="selectOption('UX/UI Designer', 'phoneInput3')">UX/UI Designer</a>
+									<a href="#" onclick="selectOption('IT Consultant', 'phoneInput3')">IT Consultant</a>
+									<a href="#" onclick="selectOption('Mobile App Developer', 'phoneInput3')">Mobile App Developer</a>
+									<a href="#" onclick="selectOption('Artificial Intelligence/Machine Learning Engineer', 'phoneInput3')">Artificial Intelligence/Machine Learning Engineer</a>
+									<a href="#" onclick="selectOption('IT Director', 'phoneInput3')">IT Director</a>
+									<a href="#" onclick="selectOption('Help Desk Technician', 'phoneInput3')">Help Desk Technician</a>
+									<a href="#" onclick="selectOption('Information Systems Manager', 'phoneInput3')">Information Systems Manager</a>
+									<a href="#" onclick="selectOption('Product Manager', 'phoneInput3')">Product Manager</a>
+								</div>
+								<span class="empty-message">*This field is required.</span>
+							</label>
+							<label class="experience">
+								<span class="text">Your Qualification:</span>
+								<input type="text" id="phoneInput4" class="dropdown-input" name="experience" placeholder="Select experience Level" value="" data-constraints="@Required @myDropdown" />
+								<div class="dropdown-content">
+									<a href="#" onclick="selectOption('Fresher', 'phoneInput4')">Fresher</a>
+									<a href="#" onclick="selectOption('1 year', 'phoneInput4')">1 year</a>
+									<a href="#" onclick="selectOption('1yr to 3yr', 'phoneInput4')">1yr to 3yr</a>
+									<a href="#" onclick="selectOption('3yr to 5yr', 'phoneInput4')">3yr to 5yr</a>
+									<a href="#" onclick="selectOption('5yr to 10yr', 'phoneInput4')">5yr to 10yr</a>
+									<a href="#" onclick="selectOption('More than 10yr', 'phoneInput4')">More than 10yr</a>
+								</div>
+								<span class="empty-message">*This field is required.</span>
+							</label>
+							<label class="message">
+								<span class="text">Message:</span>
+								<input type="text" name="message" placeholder="" data-constraints='@Required @Length(min=20,max=99999)'></input>
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*The message is too short.</span>
+							</label>
+							<div class="cont_btn">
+								<a href="#" data-type="reset" class="btn">Clear</a>
+								<button type="submit" class="btn">Submit</button>
 							</div>
-						</div>
+						</fieldset>
 					</form>
 				</div>
-			
 			</div>
 		</div>
 	</div>
     <script src="../js/dropdown.js"></script>
-    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.814.0.min.js"></script>
-    <script src="../js/app.js"></script>
+	<script src="../js/Main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
 	<!-- <script src="../build-up/js/FilterFunc.js"></script> -->
 </section>
 
