@@ -54,12 +54,12 @@ h5 a:hover {
 										HEADER styles
 =========================================================*/
 #header {
-  padding: 20px 0;
+  padding: 10px 0;
   background: #d94d3a;
 }
 #header h1 {
   float: left;
-  padding-left: 40px;
+  padding-left: 100px;
   background: url(../images/logo.png) 0 15px no-repeat;
   color: #ffffff;
 }
