@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/camera.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/SignUp.css">
+
+    
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<script src='js/camera.js'></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery.stellar.js"></script>
+	<script src="js/script.js"></script>
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+		});
+	</script>
+	<!--<![endif]-->
+	<!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+	 <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+		 <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+	 </a>
+	</div>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+	</head>
+<body class="index">
+<!--==============================header=================================-->
+<header id="header">
+	<div id="stuck_container">
+		<div class="container">
+			<div class="row">
+				<div class="grid_12">
+					<h1><a href="index.html">S&S Career Consultancy</a><span><br>your loan agency</span></h1>
+					<nav>
+						<ul class="sf-menu">
+							<li class="current"><a href="index.html">Home</a>
+								<ul>
+									<li><a href="Login.html">Login</a></li>
+									</li>
+								</ul>
+							</li>
+							<li><a href="index-1.html">About</a></li>
+							<li><a href="index-4.html">Contacts</a></li>
+							<li><a href="Login.html">Login</a>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!--=======content================================-->
+
+<section id="content">
+    <div class="containernew">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <input type="tel" id="Phone" placeholder="Phone No" maxlength="10" oninput="validateNumberInput(this)" pattern="[0-9]*" required>
+            <button type="button" id="sendOtpBtn">Continue</button>
+			
+            <div id="otpSection" style="display: none;">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <span id="error-message" class="error-message">Password must be at least 6 characters long, contain at least one uppercase letter, and one special character.</span>
+                <span id="valid-message" class="valid-message">Password meets the criteria!</span>
+                <button type="button" id="verifyOtpBtn">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <script src="../js/SignUp.js"></script>
+</section>
+
+<!--=======footer=================================-->
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="grid_12 copyright">
+				<h3><span>Follow Us</span></h3>
+				<a href="#" class="btn bd-ra"><span class="fa fa-facebook"></span></a>
+				<a href="#" class="btn bd-ra"><span class="fa fa-tumblr"></span></a>
+				<a href="#" class="btn bd-ra"><span class="fa fa-google-plus"></span></a>
+				<pre>© <span id="copyright-year"></span> |  Privacy Policy   |  S&S Career Counsultancy Pvt Ltd.</pre>
+			 <a rel="nofollow" href="http://www.templatemonster.com/category/advertising-agency-website-templates/" target="_blank"></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer_bottom"><a href="http://www.templatemonster.com/" rel="nofollow"></a></div>
+</footer>
+</body>
+</html>
