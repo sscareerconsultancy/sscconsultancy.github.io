@@ -2,49 +2,61 @@ function validateNumberInput(input) {
     input.value = input.value.replace(/[^0-9]/g, '');
 }
 
+document.getElementById('SignUpSection').addEventListener('click', function() {
+    window.location.href = 'SignUp.html';
+});
+
 document.getElementById('sendOtpBtn').addEventListener('click', function() {
-    const phone = document.getElementById('Phone').value
-    if (phone == null || phone.trim() === "" || phone.length < 10) {
-        alert('Please Enter a valid phone number:');
+    const input = document.getElementById('Phone').value;
+
+    if (input == null || input.trim() === "" || input.length < 10) {
+        alert('Please enter a valid phone number or username.');
+    } else {
+        // Retrieve user data from LocalStorage
+        const storedPhone = localStorage.getItem('phone');
+        const storedUsername = localStorage.getItem('username');
+
+        // Check if the input is a phone number (assuming phone numbers are 10 digits)
+        const isPhoneNumber = /^\d{10}$/.test(input);
+
+        if ((isPhoneNumber && input === storedPhone) || (!isPhoneNumber && input === storedUsername)) {
+            document.getElementById('otpSection').style.display = 'block';
+            // document.getElementById('SignUpSection').style.display = 'block';
+            this.style.display = 'none';
+        } else {
+            alert('User not found. Please sign up first.');
+            document.getElementById('SignUpSection').style.display = 'block';
+            this.style.display = 'none';
+        }
     }
-    else{
-        document.getElementById('otpSection').style.display = 'block';
-        this.style.display = 'none';
-    }
-    
 });
 
 document.getElementById('verifyOtpBtn').addEventListener('click', function() {
+    const input = document.getElementById('Phone').value;
     const password = document.getElementById('password').value;
-    if (password === 'R@ula007') { // Example OTP for demonstration
-        // showPopup('OTP Verified');
-        window.location.href = 'Main.html'; // Redirect to login page
+
+    // Retrieve user data from LocalStorage
+    const storedPhone = localStorage.getItem('phone');
+    const storedUsername = localStorage.getItem('username');
+    const storedPassword = localStorage.getItem('password');
+
+    // Check if the input is a phone number (assuming phone numbers are 10 digits)
+    const isPhoneNumber = /^\d{10}$/.test(input);
+
+    if (isPhoneNumber) {
+        if (input === storedPhone && password === storedPassword) {
+            alert('Login successful!');
+            window.location.href = 'Main.html'; // Redirect to welcome page
+        } else {
+            alert('Invalid Phone Number or Password');
+        }
     } else {
-        alert('Invalid Password');
-    }
-    
-});
-
-function redirectToPage() {
-    // Method 1: Using location.href
-    window.location.href = "Main.html";
-
-    // Method 2: Using location.assign
-    // window.location.assign("https://www.example.com");
-
-    // Method 3: Using location.replace
-    // window.location.replace("https://www.example.com");
-}
-document.getElementById('password').addEventListener('submit', function(event) {
-    var password = document.getElementById('password').value;
-    var errorMessage = document.getElementById('error-message');
-    var passwordPattern = /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,}$/;
-
-    if (!passwordPattern.test(password)) {
-        errorMessage.style.display = 'block';
-        event.preventDefault();
-    } else {
-        errorMessage.style.display = 'none';
+        if (input === storedUsername && password === storedPassword) {
+            alert('Login successful!');
+            window.location.href = 'Main.html'; // Redirect to welcome page
+        } else {
+            alert('Invalid Username or Password');
+        }
     }
 });
 
@@ -60,14 +72,5 @@ document.getElementById('password').addEventListener('input', function() {
     } else {
         errorMessage.style.display = 'none';
         validMessage.style.display = 'block';
-    }
-});
-
-document.getElementById('password').addEventListener('submit', function(event) {
-    var password = document.getElementById('password').value;
-    var passwordPattern = /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,}$/;
-
-    if (!passwordPattern.test(password)) {
-        event.preventDefault();
     }
 });

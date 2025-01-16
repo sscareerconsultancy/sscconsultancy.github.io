@@ -1,0 +1,39 @@
+fieldset {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+#contactInfoTable {
+    width: 120%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#contactInfoTable th, #contactInfoTable td {
+    border: 1px solid #000000;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contactInfoTable th {
+    background-color: #cdf1a4;
+}
+
+#contactInfoTable td {
+    background-color: #fff;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
