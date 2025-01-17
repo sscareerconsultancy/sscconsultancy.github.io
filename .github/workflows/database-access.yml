@@ -1,0 +1,20 @@
+name: Database Access
+
+on: [push]
+
+jobs:
+  access-db:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Access database
+        env:
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PASS: ${{ secrets.DB_PASS }}
+        run: |
+          echo "Connecting to database..."
+          PGPASSWORD=$DB_PASS psql -h your-database-host -U $DB_USER -d $DB_NAME -c "SELECT * FROM your_table;"
