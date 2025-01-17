@@ -1,7 +1,4 @@
-body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
+
         .course-titles {
             display: flex;
             flex-direction: column;
