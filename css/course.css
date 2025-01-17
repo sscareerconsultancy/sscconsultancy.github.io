@@ -1,21 +1,22 @@
 h2 {
    color: #0A0909;
 }
-.course{
+.course {
   position: relative;
   margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #fff; /* White boxes */
+  border-radius: 10px; /* Increased curve for softer edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+  background-color: #e0e0e0; /* White boxes */
+  padding: 20px; /* Add padding for inner space */
 }
 
 .course-title {
-  padding: 10px;
-  font-size: 1.2em;
-  background-color: #3498db; /* A vibrant blue */
+  padding: 15px 20px; /* Increased padding for better visual separation */
+  font-size: 1.3em;
+  background-color: #f0f0f0; /* Vibrant blue */
   color: #fff;
   cursor: pointer;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px 10px 0 0; /* Match course border-radius */
 }
 
 .course-description {
@@ -23,12 +24,12 @@ h2 {
   position: absolute;
   top: 0;
   left: 100%; /* Change to 'right: 100%' to show details on the right */
-  width: 300px;
-  padding: 10px;
-  background-color: #f0f0f0; /* A slightly darker shade of gray */
+  width: 350px; /* Increased width for more space */
+  padding: 20px;
+  background-color: #e0e0e0; /* Slightly darker gray */
   border: 1px solid #ddd;
   z-index: 1;
-  border-radius: 5px;
+  border-radius: 10px; /* Match course border-radius */
 }
 
 .course:hover .course-description {
