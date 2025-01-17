@@ -1,28 +1,23 @@
- .container {
+body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .course-titles {
             display: flex;
-            flex-wrap: wrap; /* Allow titles to wrap onto multiple lines */
-            width: 80%; /* Adjust container width as needed */
-            margin: 0 auto; /* Center the container horizontally */
+            flex-direction: column;
         }
-
-        .title-box {
-            margin: 10px; /* Add some margin between titles */
+        .course-title {
             padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            cursor: pointer; /* Indicate clickable titles */
-            text-align: center;
+            font-size: 1.2em;
+            background-color: #0073e6;
+            color: #fff;
+            cursor: pointer;
+            margin-bottom: 5px;
         }
-
-        .description {
-            float: left; /* Position description box on left */
-            width: 40%; /* Adjust description box width as needed */
+        .course-description {
+            margin-top: 20px;
             padding: 10px;
+            width: 300px;
+            background-color: #f9f9f9;
             border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 20px; /* Add some spacing below descriptions */
-        }
-
-        .active { /* Style for the currently active title */
-            background-color: #eee;
         }
