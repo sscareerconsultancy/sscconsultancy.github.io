@@ -10,6 +10,14 @@
 	<link rel="stylesheet" href="css/contact-form.css">
 	<link rel="stylesheet" href="css/Gridview.css">
 
+		 <style>
+        #googleForm {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
+
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-migrate-1.2.1.js"></script>
 	<script src="js/script.js"></script>
@@ -63,10 +71,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="grid_5">
-                    <h2>Fill out this form</h2>
+                    <h3>Fill out this form</h3>
 
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfC41z-N6fBQ55kmTxjB6kZsuJB6djAcZ-HEws5F70jVFtzyw/viewform?embedded=true" width="840" 
-                    height="381" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+					<iframe id="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSfC41z-N6fBQ55kmTxjB6kZsuJB6djAcZ-HEws5F70jVFtzyw/viewform?embedded=true" width="940" 
+                    height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 				</div>
 			
 			</div>
@@ -74,6 +82,18 @@
 	</div>
 	
     <script src="../js/Report.js"></script>
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var iframe = document.getElementById('googleForm');
+            iframe.onload = function() {
+                var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                var header = iframeDoc.querySelector('.freebirdFormviewerViewHeaderHeader');
+                if (header) {
+                    header.style.display = 'none';
+                }
+            };
+        });
+    </script>
 	
 </section>
 
