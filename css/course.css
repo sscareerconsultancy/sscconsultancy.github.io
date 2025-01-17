@@ -1,28 +1,36 @@
 h2 {
-            color: #0A0909;
-        }
-        .course {
-            position: relative;
-            margin-bottom: 20px;
-        }
-        .course-title {
-            padding: 10px;
-            font-size: 1.2em;
-            background-color: #0073e6;
-            color: #fff;
-            cursor: pointer;
-        }
-        .course-description {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 100%; /* Change to 'right: 100%' to show details on the right */
-            width: 300px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            z-index: 1;
-        }
-        .course:hover .course-description {
-            display: block;
-        }
+   color: #0A0909;
+}
+.course{
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White boxes */
+}
+
+.course-title {
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #3498db; /* A vibrant blue */
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.course-description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; /* Change to 'right: 100%' to show details on the right */
+  width: 300px;
+  padding: 10px;
+  background-color: #f0f0f0; /* A slightly darker shade of gray */
+  border: 1px solid #ddd;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.course:hover .course-description {
+  display: block;
+}
