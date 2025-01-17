@@ -1,37 +1,28 @@
-h2 {
-   color: #0A0909;
-}
-.course {
-  position: relative;
-  margin-bottom: 20px;
-  border-radius: 10px; /* Increased curve for softer edges */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
-  background-color: #e0e0e0; /* White boxes */
-  padding: 20px; /* Add padding for inner space */
-}
+ .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow titles to wrap onto multiple lines */
+            width: 80%; /* Adjust container width as needed */
+            margin: 0 auto; /* Center the container horizontally */
+        }
 
-.course-title {
-  padding: 15px 20px; /* Increased padding for better visual separation */
-  font-size: 1.3em;
-  background-color: #f0f0f0; /* Vibrant blue */
-  color: #fff;
-  cursor: pointer;
-  border-radius: 10px 10px 0 0; /* Match course border-radius */
-}
+        .title-box {
+            margin: 10px; /* Add some margin between titles */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer; /* Indicate clickable titles */
+            text-align: center;
+        }
 
-.course-description {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%; /* Change to 'right: 100%' to show details on the right */
-  width: 350px; /* Increased width for more space */
-  padding: 20px;
-  background-color: #e0e0e0; /* Slightly darker gray */
-  border: 1px solid #ddd;
-  z-index: 1;
-  border-radius: 10px; /* Match course border-radius */
-}
+        .description {
+            float: left; /* Position description box on left */
+            width: 40%; /* Adjust description box width as needed */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px; /* Add some spacing below descriptions */
+        }
 
-.course:hover .course-description {
-  display: block;
-}
+        .active { /* Style for the currently active title */
+            background-color: #eee;
+        }
