@@ -2,13 +2,27 @@ h2 {
             color: #0A0909;
         }
         .course {
+            position: relative;
             margin-bottom: 20px;
         }
         .course-title {
-            font-size: 1.3em;
-            color: #0073e6;
+            padding: 10px;
+            font-size: 1.2em;
+            background-color: #0073e6;
+            color: #fff;
+            cursor: pointer;
         }
         .course-description {
-            font-size: 1em;
-            color: #555;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%; /* Change to 'right: 100%' to show details on the right */
+            width: 300px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            z-index: 1;
+        }
+        .course:hover .course-description {
+            display: block;
         }
