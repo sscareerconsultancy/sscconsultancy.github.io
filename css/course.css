@@ -1,15 +1,11 @@
-body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            color: #333;
+h2 {
+            color: #0A0909;
         }
         .course {
             margin-bottom: 20px;
         }
         .course-title {
-            font-size: 1.2em;
+            font-size: 1.3em;
             color: #0073e6;
         }
         .course-description {
