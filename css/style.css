@@ -59,7 +59,7 @@ h5 a:hover {
 }
 #header h1 {
   float: left;
-  padding-left: 100px;
+  padding-left: 120px;
   background: url(../images/logo.png) 0 15px no-repeat;
   color: #ffffff;
 }
@@ -85,6 +85,19 @@ h5 a:hover {
   }
   #header nav {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #header h1 {
+      float: none;
+      padding-left: 10px;
+      background: none;
+      /* Center the logo */
+      text-align: center;
+      /* Center the text */
+      font-size: 1.5em;
+      /* Adjust the font size */
   }
 }
 /* Main menu styles
