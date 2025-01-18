@@ -60,54 +60,26 @@
 	<div class="full-width-container block-1">
 		 <div class="container">
         <h2>Learning Topics</h2>
-        <div class="box" tabindex="0">
+        <div class="box" onclick="showPopup('SQL (Oracle, Snowflake, SSMS, MySQL)', 'Master the art of database management and query optimization. Learn to write efficient SQL queries and handle various database platforms like Oracle, Snowflake, MySQL, and SQL Server Management Studio (SSMS).')">
             <h1>SQL (Oracle, Snowflake, SSMS, MySQL)</h1>
-            <div class="popup">
-                Master the art of database management and query optimization. Learn to write efficient SQL queries and handle various database platforms like Oracle, Snowflake, MySQL, and SQL Server Management Studio (SSMS).
-            </div>
         </div>
-        <div class="box" tabindex="0">
+        <div class="box" onclick="showPopup('Advanced SQL/PLSQL', 'Dive deeper into SQL and PLSQL for complex queries, stored procedures, and performance optimization. Learn to work with triggers, functions, and views to enhance your database programming skills.')">
             <h1>Advanced SQL/PLSQL</h1>
-            <div class="popup">
-                Dive deeper into SQL and PLSQL for complex queries, stored procedures, and performance optimization. Learn to work with triggers, functions, and views to enhance your database programming skills.
-            </div>
         </div>
-        <div class="box" tabindex="0">
+        <div class="box" onclick="showPopup('CNC (Computer Numerical Control)', 'Learn to operate and program CNC machines for precision manufacturing. Topics include CAD/CAM, CNC programming languages, and machine setup.')">
             <h1>CNC (Computer Numerical Control)</h1>
-            <div class="popup">
-                Learn to operate and program CNC machines for precision manufacturing. Topics include CAD/CAM, CNC programming languages, and machine setup.
-            </div>
         </div>
-        <div class="box" tabindex="0">
-            <h1>HTML</h1>
-            <div class="popup">
-                Build a strong foundation in web development with HTML. Understand the structure and syntax of HTML for creating web pages.
-            </div>
-        </div>
-        <div class="box" tabindex="0">
-            <h1>ASP.Net</h1>
-            <div class="popup">
-                Develop dynamic, data-driven websites using ASP.Net framework. Learn to integrate databases, handle forms, and implement security features in web applications.
-            </div>
-        </div>
-        <div class="box" tabindex="0">
-            <h1>MCSA (Microsoft Certified Solutions Associate)</h1>
-            <div class="popup">
-                Achieve expertise in managing and troubleshooting Microsoft Server environments. Topics include Windows Server administration, networking, and security.
-            </div>
-        </div>
-        <div class="box" tabindex="0">
-            <h1>CCNA (Cisco Certified Network Associate)</h1>
-            <div class="popup">
-                Gain the skills needed for networking and network troubleshooting. Learn routing, switching, and IP address management to build and secure networks.
-            </div>
-        </div>
-        <div class="box" tabindex="0">
-            <h1>Laptop Chip-Level Repairing</h1>
-            <div class="popup">
-                Learn the techniques for diagnosing and repairing laptop hardware issues. Topics include motherboard repair, soldering, and replacing faulty components at the chip level.
-            </div>
-        </div>
+        <!-- Add more boxes as needed -->
+    </div>
+
+    <div class="blur-background" id="blur-background"></div>
+
+    <div class="popup" id="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h1 id="popup-title"></h1>
+        <p id="popup-content"></p>
+    </div>
+<script src="js/course.js"></script>
     </div>
 </section>
 
