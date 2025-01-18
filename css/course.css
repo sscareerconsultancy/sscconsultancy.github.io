@@ -1,23 +1,38 @@
-  .container {
-            display: grid;
-            grid-template-columns: max-content auto;
-            grid-gap: 20px;
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
         }
-        .course-titles {
-            display: flex;
-            flex-direction: column;
+        .container {
+            padding: 20px;
         }
-        .course-title {
-            padding: 5px;
-            font-size: 1em;
-            background-color: #0073e6;
-            color: #fff;
-            cursor: pointer;
-            margin-bottom: 5px;
-            max-width: 200px;
+        h2 {
+            color: #333;
         }
-        .course-description {
+        .box {
+            background-color: #ddd;
+            color: black;
+            margin-bottom: 20px;
             padding: 10px;
-            background-color: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+        }
+        .popup {
+            display: none;
+            position: absolute;
+            background-color: white;
+            color: black;
             border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-top: 10px;
+            z-index: 1;
+        }
+        .box:hover .popup,
+        .box:focus .popup {
+            display: block;
         }
