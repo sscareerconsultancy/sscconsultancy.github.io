@@ -7,7 +7,7 @@ body {
         .container {
             padding: 20px;
         }
-        h2 {
+        h2, h1 {
             color: #333;
         }
         .box {
@@ -17,22 +17,37 @@ body {
             padding: 10px;
             border-radius: 5px;
             cursor: pointer;
-            position: relative;
         }
+        /* Popup related styles */
         .popup {
             display: none;
-            position: absolute;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
             background-color: white;
-            color: black;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 20px;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            margin-top: 10px;
-            z-index: 1;
+            z-index: 1000;
         }
-        .box:hover .popup,
-        .box:focus .popup {
-            display: block;
+        .popup h1 {
+            margin-top: 0;
+        }
+        .popup .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .blur-background {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            z-index: 999;
         }
