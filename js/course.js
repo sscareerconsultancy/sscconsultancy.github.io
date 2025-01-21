@@ -62,4 +62,8 @@ document.addEventListener('click', function(event) {
     });
   }
 });
+
+function setCourse(courseId) {
+  localStorage.setItem('selectedCourse', courseId);
+};
  

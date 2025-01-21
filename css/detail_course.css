@@ -477,6 +477,9 @@ p {
   /* Add some space above the button */
 }
 
+.course-content 
+{ display: none; }
+
 
 
   
