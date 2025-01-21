@@ -460,7 +460,7 @@ p {
 }
 .apply-container .btn {
   padding: 10px 20px;
-  background-color: #28a745;
+  background-color: #2798b8;
   color: white;
   border: none;
   border-radius: 5px;
@@ -468,7 +468,7 @@ p {
   transition: background-color 0.3s ease;
 }
 .apply-container .btn:hover {
-  background-color: #060606;
+  background-color: #28a745;
 }
 .apply-container {
   text-align: center;
