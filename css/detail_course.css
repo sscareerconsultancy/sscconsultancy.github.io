@@ -458,7 +458,24 @@ h3 {
 p {
   color: #000000; /* Dark black color */
 }
-
+.apply-container .btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.apply-container .btn:hover {
+  background-color: #060606;
+}
+.apply-container {
+  text-align: center;
+  /* Center the button within the container */
+  margin-top: 20px;
+  /* Add some space above the button */
+}
 
 
 
