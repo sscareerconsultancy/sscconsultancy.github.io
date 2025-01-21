@@ -113,6 +113,10 @@
                 loadCourseDetails(courseId);
                 localStorage.removeItem('selectedCourse');
             }
+            else 
+            { 
+                window.location.href = 'index-2.html'; // Redirect to the course selection page if no course is selected 
+            }
         });
 
 
