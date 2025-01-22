@@ -164,7 +164,7 @@ const courses = {
         features: [
             'Hands-on Practice: Includes practical exercises and real-world projects.',
             'Expert Instructors: Learn from experienced professionals.',
-            'Flexible Learning: Available in both live online and self-paced formats.',
+            'Flexible Learning: Available in both Group live online sessions and One To One Sessions <span style="color:red;">*</span>.',,
         ],
         pricing: {
             price: '₹6399/-',
