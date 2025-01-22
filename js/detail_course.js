@@ -4,19 +4,69 @@ const courses = {
         title: 'SQL (Oracle, Snowflake, SSMS, MySQL)',
         modules: [
             {
-                title: 'Module 1: SQL Basics',
+                title: 'Module 1: Introduction to SQL',
                 topics: [
-                    'Introduction to SQL',
-                    'Basic SQL commands (SELECT, INSERT, UPDATE, DELETE)',
-                    'Understanding database structures (tables, rows, columns)',
-                    'Writing simple queries'
+                    'Overview of SQL and Its Importance: Understanding the role of SQL in data management and analysis.',
+                    'Basic Concepts and Terminology: Key terms like databases, tables, rows, columns, and primary keys.',
+                    'Setting Up SQL Environments: Installation and configuration for Oracle, Snowflake, SSMS, and MySQL'
                 ]
             },
+            {
+                title: 'Module 2: Basic SQL Commands',
+                topics: [
+                    'SELECT Statements: Retrieving data from databases',
+                    'Filtering Data with WHERE: Applying conditions to filter results',
+                    'Sorting Data with ORDER BY: Organizing data in a specific order',
+                    'Basic Commands in Oracle, Snowflake, SSMS, and MySQL: Platform-specific syntax and usage'
+                ]
+            },
+            {
+                title: 'Module 3: Advanced SQL Queries',
+                topics: [
+                    'JOIN Operations: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN',
+                    'Subqueries and Nested Queries: Writing queries within queries',
+                    'Aggregate Functions: SUM, COUNT, AVG, MIN, MAX',
+                    'Advanced Querying Techniques: Platform-specific advanced queries'
+                ]
+            },
+            {
+                title: 'Module 5: Data Manipulation',
+                topics: [
+                    'INSERT, UPDATE, DELETE Statements: Modifying data in databases',
+                    'Transactions and Rollback: Ensuring data integrity',
+                    'Handling NULL Values: Managing missing data',
+                    'Data Manipulation Specifics for Each Platform: Unique features and syntax'
+                ]
+            },
+            {
+                title: 'Module 6: Advanced Topics',
+                topics: [
+                    'Indexing and Performance Optimization: Improving query performance',
+                    'Stored Procedures and Functions: Writing reusable SQL code',
+                    'Triggers and Views: Automating tasks and creating virtual tables',
+                    'Platform-Specific Advanced Topics: Unique features of Oracle, Snowflake, SSMS, and MySQL'
+                ]
+            },
+            {
+                title: 'Module 7: Practical Applications',
+                topics: [
+                    'Real-World Case Studies: Applying SQL to solve real problems',
+                    'SQL in Data Analysis and Reporting: Using SQL for business intelligence',
+                    'Practical Applications for Oracle, Snowflake, SSMS, and MySQL: Specific use cases and examples'
+                ]
+            },
+            {
+                title: 'Module 9: Capstone Project',
+                topics: [
+                    'Comprehensive Project Integrating All Learned Concepts: A final project to demonstrate mastery',
+                    'Real-World Data Analysis and Reporting: Analyzing and reporting on real datasets',
+                    'Platform-Specific Implementations and Optimizations: Tailoring solutions to each SQL platform'
+                ]
+            }
             // Add other modules here
         ],
         features: [
             'Hands-on Practice: Includes practical exercises and real-world projects.',
-            'Certification: Earn a certification upon completion.',
             'Expert Instructors: Learn from experienced professionals.',
             'Flexible Learning: Available in both live online and self-paced formats.',
             '24/7 Lab Access: Remote access to databases for practice.'
