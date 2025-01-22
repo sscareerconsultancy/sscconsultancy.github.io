@@ -30,7 +30,7 @@ const courses = {
                 ]
             },
             {
-                title: 'Module 5: Data Manipulation',
+                title: 'Module 4: Data Manipulation',
                 topics: [
                     'INSERT, UPDATE, DELETE Statements: Modifying data in databases',
                     'Transactions and Rollback: Ensuring data integrity',
@@ -39,7 +39,7 @@ const courses = {
                 ]
             },
             {
-                title: 'Module 6: Advanced Topics',
+                title: 'Module 5: Advanced Topics',
                 topics: [
                     'Indexing and Performance Optimization: Improving query performance',
                     'Stored Procedures and Functions: Writing reusable SQL code',
@@ -48,7 +48,7 @@ const courses = {
                 ]
             },
             {
-                title: 'Module 7: Practical Applications',
+                title: 'Module 6: Practical Applications',
                 topics: [
                     'Real-World Case Studies: Applying SQL to solve real problems',
                     'SQL in Data Analysis and Reporting: Using SQL for business intelligence',
@@ -56,7 +56,7 @@ const courses = {
                 ]
             },
             {
-                title: 'Module 9: Capstone Project',
+                title: 'Module 7: Capstone Project',
                 topics: [
                     'Comprehensive Project Integrating All Learned Concepts: A final project to demonstrate mastery',
                     'Real-World Data Analysis and Reporting: Analyzing and reporting on real datasets',
