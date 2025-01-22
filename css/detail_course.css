@@ -457,6 +457,8 @@ h3 {
 }
 p {
   color: #000000; /* Dark black color */
+  font-weight: bold;
+  width: 1em;
 }
 .apply-container .btn {
   padding: 10px 20px;
