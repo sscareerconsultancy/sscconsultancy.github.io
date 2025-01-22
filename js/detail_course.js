@@ -74,7 +74,6 @@ const courses = {
         pricing: {
             price: '₹ 4299/-',
             duration: '60 Sessions ,30min to 45min',
-            startDate: 'Starts Soon',
             schedule: 'Mondays to  Friday, (7:00 AM - 9:00 AM OR 8:00 PM - 10:00 PM)',
             location: 'Online',
             description: 'This course covers the fundamentals of SQL (Oracle, Snowflake, SSMS, MySQL).'
@@ -170,7 +169,6 @@ const courses = {
         pricing: {
             price: '₹6399/-',
             duration: '60 Sessions ,30min to 45min',
-            startDate: 'Starts Soon',
             schedule: 'Mondays to  Friday, (7:00 AM - 9:00 AM OR 8:00 PM - 10:00 PM)',
             location: 'Online',
             description: 'This course covers advanced SQL and PLSQL topics.'
