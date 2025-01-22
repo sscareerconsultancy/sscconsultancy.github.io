@@ -72,10 +72,10 @@ const courses = {
             '24/7 Lab Access: Remote access to databases for practice.'
         ],
         pricing: {
-            price: '₹3000',
-            duration: '10 weeks',
+            price: '₹ 4299/-',
+            duration: '60 Sessions ,30min to 45min',
             startDate: 'Starts Soon',
-            schedule: 'Mondays to  Friday, 7:00 AM - 7:45 AM',
+            schedule: 'Mondays to  Friday, (7:00 AM - 9:00 AM OR 8:00 PM - 10:00 PM)',
             location: 'Online',
             description: 'This course covers the fundamentals of SQL (Oracle, Snowflake, SSMS, MySQL).'
         }
@@ -84,28 +84,94 @@ const courses = {
         title: 'Advanced SQL/PLSQL',
         modules: [
             {
-                title: 'Module 1: Advanced SQL Queries',
+                title: 'Module 1: Introduction to PL/SQL',
                 topics: [
-                    'Subqueries and joins',
-                    'Window functions',
-                    'Common table expressions (CTEs)',
-                    'Query optimization'
+                    'Basic Concepts and Terminology: Key terms and concepts in PL/SQL',
+                    'Setting Up the Environment: Installing and configuring Oracle Database and SQL Developer'
                 ]
             },
+            {
+                title: 'Module 2: PL/SQL Block Structure',
+                topics: [
+                    'Anonymous Blocks: Writing and executing simple PL/SQL blocks',
+                    'Named Blocks: Introduction to procedures, functions, and packages',
+                    'Block Structure: Understanding the DECLARE, BEGIN, EXCEPTION, and END sections'
+                ]
+            },
+            {
+                title: 'Module 3: Control Structures',
+                topics: [
+                    'Conditional Statements: IF-THEN-ELSE, CASE statements',
+                    'Loops: FOR, WHILE, and simple loops',
+                    'Control Statements: EXIT, CONTINUE, GOTO'
+                ]
+            },
+            {
+                title: 'Module 4: Cursors',
+                topics: [
+                    'Implicit Cursors: Understanding and using implicit cursors',
+                    'Explicit Cursors: Declaring, opening, fetching, and closing explicit cursors',
+                    'Cursor Attributes: %FOUND, %NOTFOUND, %ROWCOUNT, %ISOPEN'
+                ]
+            },
+            {
+                title: 'Module 5: Exception Handling',
+                topics: [
+                    'Predefined Exceptions: Handling common Oracle errors',
+                    'User-Defined Exceptions: Creating and raising custom exceptions',
+                    'Exception Propagation: Understanding how exceptions propagate in PL/SQL blocks'
+                ]
+            },
+            {
+                title: 'Module 6: Stored Procedures and Functions',
+                topics: [
+                    'Creating Procedures: Syntax and examples',
+                    'Creating Functions: Syntax and examples',
+                    'Parameter Modes: IN, OUT, IN OUT parameters',
+                    'Invoking Procedures and Functions: Calling from SQL and PL/SQL'
+                ]
+            },
+            {
+                title: 'Module 7: Packages',
+                topics: [
+                    'Package Specification: Declaring public elements',
+                    'Package Body: Defining the implementation',
+                    'Using Packages: Benefits and examples of using packages'
+                ]
+            },
+            {
+                title: 'Module 8: Triggers',
+                topics: [
+                    'Creating Triggers: Syntax and examples',
+                    'Types of Triggers: BEFORE, AFTER, INSTEAD OF triggers'
+                ]
+            },
+            {
+                title: 'Module 9: Advanced PL/SQL',
+                topics: [
+                    'Bulk Processing: Using BULK COLLECT and FORALL for efficient data processing',
+                    'Dynamic SQL: Writing and executing dynamic SQL with EXECUTE IMMEDIATE'
+                ]
+            },
+            {
+                title: 'Module 10: Practical Applications',
+                topics: [
+                    'Real-World Case Studies: Applying PL/SQL to solve real-world problems',
+                    'PL/SQL in Data Analysis and Reporting: Using PL/SQL for business intelligence'
+                ]
+            }
             // Add other modules here
         ],
         features: [
             'Hands-on Practice: Includes practical exercises and real-world projects.',
-            'Certification: Earn a certification upon completion.',
             'Expert Instructors: Learn from experienced professionals.',
             'Flexible Learning: Available in both live online and self-paced formats.',
-            '24/7 Lab Access: Remote access to databases for practice.'
         ],
         pricing: {
-            price: '₹4000',
-            duration: '10 weeks',
+            price: '₹6399/-',
+            duration: '60 Sessions ,30min to 45min',
             startDate: 'Starts Soon',
-            schedule: 'Mondays to  Friday, 7:00 AM - 7:45 AM',
+            schedule: 'Mondays to  Friday, (7:00 AM - 9:00 AM OR 8:00 PM - 10:00 PM)',
             location: 'Online',
             description: 'This course covers advanced SQL and PLSQL topics.'
         }
